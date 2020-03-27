@@ -39,3 +39,15 @@ function range(min, max, step){
 
     return tab;
 }
+
+function nbOccurences(wordList, word){
+    let tab = wordList.split(" ");
+    let occurence = 0;
+    for(let value of tab){
+        if(value == word){
+            occurence++;
+        }
+    }
+
+    return occurence;
+}

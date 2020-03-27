@@ -1,3 +1,4 @@
 function Test(){
-    console.log(range(40, 90, 20));
+    let wordList = "bar foo foo bar foo"
+    console.log(nbOccurences(wordList, "foo"));
 }
