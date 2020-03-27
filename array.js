@@ -16,3 +16,26 @@ function sum2(tab){
 
     return somme;
 }
+
+function longestWord(tab){
+    let size = 0;
+    let indice;
+    for(let word of tab){
+        if(word.length > size){
+            size = word.length;
+            indice = tab.indexOf(word)
+        }
+    }
+
+    return tab[indice];
+}
+
+function range(min, max, step){
+    let tab = [];
+    while(min <= max){
+        tab.push(min);
+        min += step;
+    }
+
+    return tab;
+}
