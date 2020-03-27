@@ -1,0 +1,5 @@
+function main(){
+    Test();
+}
+
+main();
