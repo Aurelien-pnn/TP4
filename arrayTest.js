@@ -1,3 +1,5 @@
+// Test Exercice 1
+
 function sumTest(){
     let tab = [6, 8, 43, 9];
     let result = sum(tab);
@@ -6,21 +8,29 @@ function sumTest(){
     console.log("result2 :" + result2);
 }
 
+// Test Exercice 2
+
 function longestWordTest(){
     let fruit = ["banane", "kiwi", "ananas", "clementine"];
     let meilleurFruit = longestWord(fruit);
     console.log(meilleurFruit);
 }
 
+// Test Exercice 3
+
 function rangeTest(){
     let tab = range(30, 78, 2);
     console.log(tab);
 }
 
+// Test Exercice 4
+
 function nbOccurencesTest(){
     let text = "foo bar foo gue foo for"
     console.log(nbOccurences(text, foo));
 }
+
+// Test Exercice 5
 
 function flatten2DTest(){
     let matrix = [[1, 6, 8], [3, 9, 4], [2, 8, 4]];
@@ -28,14 +38,20 @@ function flatten2DTest(){
     console.log(flatten2DTwo(matrix));
 }
 
+// Test Exercice 6
+
 function nameTest(){
     let nameTab = ["Roger", "Robert", "Fred"];
     name(nameTab);
 }
 
+// Test Exercice 7
+
 function multiplicationTableTest(){
     multiplicationTable();
 }
+
+// Test Exercice 8
 
 function chiffrementCesarTest(){
     let newText = chiffrementCesar("attaquez asterix", 3);
@@ -58,6 +74,8 @@ function dechiffrementCesarTest(){
     let decript = dechiffrementCesar(newText, 3);
     console.log(decript);
 }
+
+// Test Exercice 9
 
 function chiffrementViginereTest(){
     newText = chiffrementViginere("ATTAQUEZ ASTERIX!", 314);
