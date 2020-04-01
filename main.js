@@ -1,6 +1,5 @@
 function main(){
-    dechiffrementTest();
-    
+    dechiffrementViginereTest();
 }
 
 main();

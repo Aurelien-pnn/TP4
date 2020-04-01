@@ -37,13 +37,24 @@ function multiplicationTableTest(){
     multiplicationTable();
 }
 
-function chiffrementTest(){
+function chiffrementCesarTest(){
     let newText = chiffrement("attaquez asterix", 3);
     console.log(newText);
 }
 
-function dechiffrementTest(){
-    let newText = chiffrement("attaquez asterix", 3);
-    let decript = dechiffrement(newText, 3);
+function dechiffrementCesarTest(){
+    let newText = chiffrementCesar("attaquez asterix", 3);
+    let decript = dechiffrementCesar(newText, 3);
+    console.log(decript);
+}
+
+function chiffrementViginereTest(){
+    newText = chiffrementViginere("ATTAQUEZ ASTERIX!", 314);
+    console.log(newText);
+}
+
+function dechiffrementViginereTest(){
+    text = chiffrementViginere("ATTAQUEZ ASTERIX!", 314);
+    decript = dechiffrementViginere(text, 314);
     console.log(decript);
 }
