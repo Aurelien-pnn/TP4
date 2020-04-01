@@ -1,4 +1,6 @@
 function Test(){
-    let wordList = "bar foo foo bar foo"
-    console.log(nbOccurences(wordList, "foo"));
+    let tab = [[1, 2], [3, 4, 5], [6]];
+    let newArray = flatten2D(tab);
+    console.log(tab);
+    console.log(newArray);
 }

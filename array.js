@@ -1,3 +1,5 @@
+//Exercice 1
+
 function sum(tab){
     let somme = 0;
     let taille = tab.length;
@@ -17,6 +19,8 @@ function sum2(tab){
     return somme;
 }
 
+//Exercice 2
+
 function longestWord(tab){
     let size = 0;
     let indice;
@@ -30,6 +34,8 @@ function longestWord(tab){
     return tab[indice];
 }
 
+//Exercice 3
+
 function range(min, max, step){
     let tab = [];
     while(min <= max){
@@ -39,6 +45,8 @@ function range(min, max, step){
 
     return tab;
 }
+
+//Exercice 4
 
 function nbOccurences(wordList, word){
     let tab = wordList.split(" ");
@@ -50,4 +58,19 @@ function nbOccurences(wordList, word){
     }
 
     return occurence;
+}
+
+//Exercice 5
+
+function flatten2D(array){
+    let newArray = [];
+    let taille = array.length;
+    for(let i = 0; i < taille; i++){
+        let size = array[i].length;
+        for(let j = 0; j < size; j++){
+            newArray += array[i][j];
+        }
+    }
+
+    return newArray;
 }
