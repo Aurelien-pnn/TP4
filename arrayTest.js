@@ -38,8 +38,19 @@ function multiplicationTableTest(){
 }
 
 function chiffrementCesarTest(){
-    let newText = chiffrement("attaquez asterix", 3);
+    let newText = chiffrementCesar("attaquez asterix", 3);
     console.log(newText);
+}
+
+function chiffrementCesar2Test(){
+    let newText = chiffrementCesar2("attaquez asterix", 3);
+    console.log(newText);
+}
+
+function dechiffrementCesar2Test(){
+    let text = chiffrementCesar2("attaquez asterix", 3);
+    let decript = dechiffrementCesar2(text, 3);
+    console.log(decript);
 }
 
 function dechiffrementCesarTest(){
@@ -54,7 +65,8 @@ function chiffrementViginereTest(){
 }
 
 function dechiffrementViginereTest(){
-    text = chiffrementViginere("ATTAQUEZ ASTERIX!", 314);
+    text = chiffrementViginere("AYOuB Le SAng DI L'ARTère!", 314);
+    console.log(text);
     decript = dechiffrementViginere(text, 314);
     console.log(decript);
 }

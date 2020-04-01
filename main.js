@@ -1,5 +1,5 @@
 function main(){
-    dechiffrementViginereTest();
+    chiffrementCesar2Test();
 }
 
 main();

@@ -151,8 +151,45 @@ function chiffrementCesar(text, clef){
     return newText;
 }
 
+function chiffrementCesar2(text, clef){
+    let letterTable = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", 
+    "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    let letterTableMaj = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", 
+    "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+    let newText = "";
+    let iter;
+    for(let char of text){
+        iter = 0;
+        if(belongs(char, letterTable)){
+            while(letterTable[iter] != char){
+                iter++;
+            }
+            iter = (iter + clef) % 26;
+            newText += letterTable[iter];
+        }
+        else if(belongs(char, letterTableMaj)){
+            while(letterTableMaj[iter] != char){
+                iter++;
+            }
+            iter = (iter + clef) % 26;
+            newText += letterTableMaj[iter];
+        }
+        else{
+            newText += char;
+        }
+    }
+
+    return newText;
+}
 
 function dechiffrementCesar(text, clef){
+    let newClef = -clef;
+    let newText = chiffrementCesar(text, newClef);
+
+    return newText;
+}
+
+function dechiffrementCesar2(text, clef){
     let newClef = -clef;
     let newText = chiffrementCesar(text, newClef);
 
@@ -228,4 +265,13 @@ function printTab(tab){
         string += " ";
     }
     console.log(string);
+}
+
+function belongs(char, tab){
+    for(let elem of tab){
+        if(elem == char){
+            return true;
+        }
+    }
+    return false;
 }
