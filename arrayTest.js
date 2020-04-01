@@ -36,3 +36,14 @@ function nameTest(){
 function multiplicationTableTest(){
     multiplicationTable();
 }
+
+function chiffrementTest(){
+    let newText = chiffrement("attaquez asterix", 3);
+    console.log(newText);
+}
+
+function dechiffrementTest(){
+    let newText = chiffrement("attaquez asterix", 3);
+    let decript = dechiffrement(newText, 3);
+    console.log(decript);
+}
