@@ -83,7 +83,7 @@ function chiffrementViginereTest(){
 }
 
 function dechiffrementViginereTest(){
-    text = chiffrementViginere("AYOuB Le SAng DI L'ARTère!", 314);
+    text = chiffrementViginere("Attaquez Astérix", 314);
     console.log(text);
     decript = dechiffrementViginere(text, 314);
     console.log(decript);
