@@ -74,3 +74,52 @@ function flatten2D(array){
 
     return newArray;
 }
+
+function flatten2DTwo(array){
+    let newArray = [];
+    for(let tab of array){
+        for(let value of tab){
+            newArray += value;
+        }
+    }
+
+    return newArray;
+}
+
+//Exercice 6
+
+function name(tab){
+    for(let name of tab){
+        console.log(name);
+    }
+    tab.pop();
+    tab.push("Aurélien");
+    console.log("newTableau :");
+    for(let name of tab){
+        console.log(name);
+    }
+}
+
+//Exercice 7
+
+function multiplicationTable(){
+    let tab = [];
+    for(let i = 0; i <= 9; i++){
+        console.log("Table de multiplication de " + i + " :");
+        for(let j = 0; j <= 10; j++){
+            tab[j] = j*i;
+        }
+        printTab(tab);
+    }
+}
+
+//Fonction auxiliaire
+
+function printTab(tab){
+    let string = "";
+    for(let value of tab){
+        string += value;
+        string += " ";
+    }
+    console.log(string);
+}
